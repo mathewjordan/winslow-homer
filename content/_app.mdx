@@ -4,7 +4,7 @@ import {CanopyHeader, CanopyFooter} from "@canopy-iiif/app/ui";
 export function Head() {
   return (
     <>
-      <Meta siteTitle="Site Title" />
+      <Meta siteTitle="Works of Winslow Homer" />
       <Stylesheet />
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link
@@ -28,8 +28,7 @@ export function App({children}) {
           {href: "/search", label: "Works"},
           {href: "/about", label: "About"},
         ]}
-        title="Site Title"
-        logo={Logo}
+        title="Works of Winslow Homer"
       />
       <main>{children}</main>
       <CanopyFooter>
@@ -38,13 +37,3 @@ export function App({children}) {
     </>
   );
 }
-
-export const Logo = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
-    <circle className="canopy-logo-backlight" cx="250" cy="250" r="250" />
-    <path
-      className="canopy-logo-overlay"
-      d="M125,33.45C50.28,76.68,0,157.47,0,250s50.28,173.32,125,216.55c74.72-43.23,125-124.01,125-216.55S199.72,76.68,125,33.45Z"
-    />
-  </svg>
-);
