@@ -61,7 +61,7 @@ jobs:
       - name: Build site
         env:
           CANOPY_CHUNK_SIZE: "10"
-          CANOPY_FETCH_CONCURRENCY: "1"
+          CANOPY_FETCH_CONCURRENCY: "0"
         run: npm run build
 
       - name: Upload artifact
